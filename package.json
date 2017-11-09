@@ -1,23 +1,24 @@
 {
-  "name": "jim-calculate",
-  "version": "1.0.0",
+  "name": "meditor",
+  "version": "0.0.1",
   "description": "",
   "main": "index",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.js --progress --color --hot",
     "build": "rimraf dist && webpack --config webpack.prod.js --progress --color",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "rollup -c rollup.dev.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Greensoon/jim-calculate.git"
+    "url": "git+https://github.com/5bei/meditor.git"
   },
   "author": "Jim",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Greensoon/jim-calculate/issues"
+    "url": "https://github.com/5bei/meditor/issues"
   },
-  "homepage": "https://github.com/Greensoon/jim-calculate#readme",
+  "homepage": "https://github.com/5bei/meditor#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -37,6 +38,8 @@
     "less": "^3.0.0-alpha.3",
     "less-loader": "^4.0.5",
     "rimraf": "^2.6.2",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
     "style-loader": "^0.19.0",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.3"
