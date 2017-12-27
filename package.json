@@ -6,8 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.js --progress --color --hot",
     "build": "rimraf dist && webpack --config webpack.prod.js --progress --color",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "rollup -c rollup.dev.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -28,6 +27,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.7.2",
     "babel-runtime": "^6.6.1",
+    "clipboard": "^1.7.1",
     "css-loader": "^0.28.7",
     "eslint": "^4.9.0",
     "eslint-loader": "^1.9.0",
@@ -35,6 +35,7 @@
     "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.30.1",
     "jmcalculator": "0.0.2",
+    "jquery": "^3.2.1",
     "less": "^3.0.0-alpha.3",
     "less-loader": "^4.0.5",
     "rimraf": "^2.6.2",
