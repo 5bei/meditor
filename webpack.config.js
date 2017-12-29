@@ -15,7 +15,7 @@ module.exports = {
   devtool: 'source-map',
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'h5 webpack优化版',
+      title: 'meditor',
       template: './index.html',
       inject: 'body',
     }),
@@ -83,6 +83,10 @@ module.exports = {
         ],
         fallback: "style-loader"
       })
+    },
+    {
+      test: /\.(ttf|woff|woff2)$/,
+      use: 'url-loader?limit=10000'
     }]
   }
 }
